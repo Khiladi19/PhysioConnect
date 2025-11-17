@@ -1,0 +1,16 @@
+# Ignore server build artifacts
+backend/node_modules/
+backend/dist/
+backend/.next/
+
+# Ignore general
+*.log
+.DS_Store
+
+# Environment files
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development
+node_modules

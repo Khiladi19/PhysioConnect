@@ -1,0 +1,170 @@
+// Home.jsx
+import React from "react";
+import Hero from "../components/Hero";
+import DoctorCard from "../components/DoctorCard";
+import { sampleDoctors } from "../data/sampleDoctors";
+
+export default function Home() {
+//  const sampleDoctors = [
+//   {
+//     name: "Dr. Ankit Mehra",
+//     specialization: "Physiotherapist",
+//     experience: 9,
+//     rating: 4.9,
+//     reviews: 240,
+//     fees: 700,
+//     city: "Mumbai",
+//     image:
+//       "https://images.pexels.com/photos/5327653/pexels-photo-5327653.jpeg",
+//   },
+//   {
+//     name: "Dr. Riya Kapoor",
+//     specialization: "Orthopedic",
+//     experience: 11,
+//     rating: 4.7,
+//     reviews: 198,
+//     fees: 900,
+//     city: "Delhi",
+//     image:
+//       "https://images.pexels.com/photos/8460034/pexels-photo-8460034.jpeg",
+//   },
+//   {
+//     name: "Dr. Mehul Shah",
+//     specialization: "Cardiologist",
+//     experience: 15,
+//     rating: 4.8,
+//     reviews: 305,
+//     fees: 1500,
+//     city: "Ahmedabad",
+//     image:
+//       "https://images.pexels.com/photos/5327912/pexels-photo-5327912.jpeg",
+//   },
+//   {
+//     name: "Dr. Kavita Suresh",
+//     specialization: "Dermatologist",
+//     experience: 7,
+//     rating: 4.6,
+//     reviews: 167,
+//     fees: 800,
+//     city: "Bangalore",
+//     image:
+//       "https://images.pexels.com/photos/8460162/pexels-photo-8460162.jpeg",
+//   },
+//   {
+//     name: "Dr. Rahul Desai",
+//     specialization: "General Physician",
+//     experience: 12,
+//     rating: 4.5,
+//     reviews: 210,
+//     fees: 600,
+//     city: "Pune",
+//     image:
+//       "https://images.pexels.com/photos/6129041/pexels-photo-6129041.jpeg",
+//   },
+//   {
+//     name: "Dr. Sana Iqbal",
+//     specialization: "Gynecologist",
+//     experience: 10,
+//     rating: 4.9,
+//     reviews: 280,
+//     fees: 1200,
+//     city: "Hyderabad",
+//     image:
+//       "https://images.pexels.com/photos/7580255/pexels-photo-7580255.jpeg",
+//   },
+//   {
+//     name: "Dr. Arvind Khanna",
+//     specialization: "Neurologist",
+//     experience: 18,
+//     rating: 4.8,
+//     reviews: 330,
+//     fees: 1800,
+//     city: "Chandigarh",
+//     image:
+//       "https://images.pexels.com/photos/8460346/pexels-photo-8460346.jpeg",
+//   },
+//   {
+//     name: "Dr. Priya Nair",
+//     specialization: "Pediatrician",
+//     experience: 8,
+//     rating: 4.7,
+//     reviews: 190,
+//     fees: 700,
+//     city: "Kochi",
+//     image:
+//       "https://images.pexels.com/photos/12663024/pexels-photo-12663024.jpeg",
+//   },
+//   {
+//     name: "Dr. Manish Goyal",
+//     specialization: "Dentist",
+//     experience: 5,
+//     rating: 4.4,
+//     reviews: 120,
+//     fees: 500,
+//     city: "Jaipur",
+//     image:
+//       "https://images.pexels.com/photos/8460029/pexels-photo-8460029.jpeg",
+//   },
+//   {
+//     name: "Dr. Nisha Thomas",
+//     specialization: "Psychiatrist",
+//     experience: 13,
+//     rating: 4.9,
+//     reviews: 250,
+//     fees: 1600,
+//     city: "Chennai",
+//     image:
+//       "https://images.pexels.com/photos/8460156/pexels-photo-8460156.jpeg",
+//   },
+//   {
+//     name: "Dr. Vikas Patil",
+//     specialization: "ENT Specialist",
+//     experience: 6,
+//     rating: 4.3,
+//     reviews: 110,
+//     fees: 650,
+//     city: "Nagpur",
+//     image:
+//       "https://images.pexels.com/photos/6749776/pexels-photo-6749776.jpeg",
+//   },
+//   {
+//     name: "Dr. Shalini Rao",
+//     specialization: "Ophthalmologist",
+//     experience: 14,
+//     rating: 4.8,
+//     reviews: 270,
+//     fees: 1000,
+//     city: "Surat",
+//     image:
+//       "https://images.pexels.com/photos/8460378/pexels-photo-8460378.jpeg",
+//   },
+//   {
+//     name: "Dr. Harsh Jain",
+//     specialization: "Gastroenterologist",
+//     experience: 16,
+//     rating: 4.6,
+//     reviews: 220,
+//     fees: 1400,
+//     city: "Lucknow",
+//     image:
+//       "https://images.pexels.com/photos/8460360/pexels-photo-8460360.jpeg",
+//   },
+// ];
+
+
+  return (
+    <>
+      <Hero />
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <h2 className="text-xl font-semibold text-slate-900">
+          Recommended Doctors
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+          {sampleDoctors.map((doc, idx) => (
+            <DoctorCard key={idx} doctor={doc} />
+          ))}
+        </div>
+      </section>
+    </>
+  );
+}

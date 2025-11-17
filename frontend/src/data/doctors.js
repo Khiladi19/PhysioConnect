@@ -1,0 +1,67 @@
+export const DOCTORS = [
+  {
+    id: 1,
+    name: "Dr. Asha Verma",
+    exp: 8,
+    fee: 800,
+    spec: "Ortho",
+    qual: "MPT",
+    photo:
+      "https://static.vecteezy.com/system/resources/previews/028/287/555/non_2x/an-indian-young-female-doctor-isolated-on-green-ai-generated-photo.jpg",
+    recommended: true,
+    rating: 4.8,
+    location: "Darbhanga, Bihar",
+  },
+  {
+    id: 2,
+    name: "Dr. Rohit Singh",
+    exp: 5,
+    fee: 900,
+    spec: "Neuro",
+    qual: "BPT",
+    photo:
+      "https://as2.ftcdn.net/v2/jpg/02/69/98/99/1000_F_269989951_9Gf7PWaRtrpm2EochO3D5WVn22sFZbNZ.jpg",
+    recommended: false,
+    rating: 4.6,
+    location: "Patna, Bihar",
+  },
+  {
+    id: 3,
+    name: "Dr. Meera Patel",
+    exp: 10,
+    fee: 700,
+    spec: "Post-Operative",
+    qual: "MPT",
+    photo:
+      "https://img.freepik.com/premium-photo/indian-female-doctor-indian-nurse_714173-204.jpg?w=2000",
+    recommended: true,
+    rating: 4.7,
+    location: "Mumbai, Maharashtra",
+  },
+  {
+    id: 4,
+    name: "Dr. Suresh Kumar",
+    exp: 6,
+    fee: 900,
+    spec: "Ortho",
+    qual: "BPT",
+    photo:
+      "https://tse2.mm.bing.net/th/id/OIP.vPIl69S2oaWhrRfQs3OiKwHaE8?pid=Api&P=0&h=180",
+    recommended: false,
+    rating: 4.8,
+    location: "Darbhanga, Bihar",
+  },
+  {
+    id: 5,
+    name: "Dr. Anjali Rao",
+    exp: 7,
+    fee: 1000,
+    spec: "Geriatric",
+    qual: "MPT",
+    photo:
+      "https://img.freepik.com/premium-photo/indian-female-doctor-indian-nurse_714173-204.jpg?w=2000",
+    recommended: true,
+    rating: 4.7,
+    location: "Mumbai, Maharashtra",
+  },
+];

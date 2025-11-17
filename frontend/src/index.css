@@ -1,0 +1,26 @@
+/* subtle global tweaks for premium look */
+:root {
+  --brand: #0B5FFF;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* custom card shadow for elevated look */
+.card-elevated {
+  box-shadow: 0 12px 30px rgba(2,6,23,0.06);
+  border-radius: 16px;
+}
+
+/* subtle focus ring for inputs */
+input:focus, select:focus, button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(11,95,255,0.08);
+  border-color: var(--brand);
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
