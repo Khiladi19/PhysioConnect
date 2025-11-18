@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const Home = lazy(() => import("./pages/Home"));
 const DoctorsList = lazy(() => import("./pages/DoctorsList"));
@@ -20,6 +21,7 @@ export default function App() {
           <Route path="/booking" element={<Booking />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+      <Footer/>
       </Suspense>
     </div>
   );
