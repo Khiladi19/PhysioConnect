@@ -28,7 +28,7 @@ export default {
         },
       },
       animation: {
-        loadingBar: "loading 1.4s ease-in-out infinite",
+        loadingBar: "loading 1.8s ease-in-out infinite",
       },
     },
   },
