@@ -21,6 +21,15 @@ export default {
       boxShadow: {
         soft: "0 6px 20px rgba(11,95,255,0.08)",
       },
+       keyframes: {
+        loading: {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(100%)" },
+        },
+      },
+      animation: {
+        loadingBar: "loading 1.4s ease-in-out infinite",
+      },
     },
   },
   plugins: [],
